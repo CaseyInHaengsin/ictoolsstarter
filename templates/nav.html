@@ -1,0 +1,13 @@
+{% extends 'bootstrap.html' %}
+{% block navbar %}
+    <nav class="navbar navbar-default">
+        <div class='container'>
+            <div class="navbar-header">
+                <a class='navbar-brand' href="{{ url_for('index') }}">Home</a>
+                <a class='navbar-brand' href="{{ url_for('login') }}">Login</a>
+                <a class='navbar-brand' href="{{ url_for('canvas') }}">Casey's Canvas Instance</a>
+            </div>
+        </div>
+    </nav>
+
+ {% endblock %}

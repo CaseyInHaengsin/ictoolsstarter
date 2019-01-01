@@ -1,0 +1,23 @@
+{% extends 'bootstrap/base.html' %}
+<html>
+    <head>
+        <title>Welcome</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+    <body>
+{% block navbar %}
+    <nav class="navbar navbar-default">
+        <div class='container'>
+            <div class="navbar-header">
+                <a class='navbar-brand' href="{{ url_for('login') }}">Login Screen</a>
+                <a class='navbar-brand' href="{{ url_for('create_account') }}">Create Account</a>
+            </div>
+        </div>
+    </nav>
+
+ {% endblock %}
+
+{% block content %}
+{% endblock %}
+</body>
+</html>
